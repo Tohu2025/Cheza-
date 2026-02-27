@@ -1,4 +1,5 @@
 import { Routes, Route, Link } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Home from "./pages/Home";
 import Creators from "./pages/Creators";
 import Dashboard from "./pages/Dashboard";
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/creators" element={<Creators />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
+      <SpeedInsights />
     </div>
   );
 }
